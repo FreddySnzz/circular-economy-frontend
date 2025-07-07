@@ -6,7 +6,10 @@ const nextConfig: NextConfig = {
   staticPageGenerationTimeout: 300,
   eslint: {
     ignoreDuringBuilds: true
-  }
+  },
+  images: {
+    remotePatterns: [new URL('https://cdn-icons-png.flaticon.com/**')],
+  },
 };
 
 export default nextConfig;

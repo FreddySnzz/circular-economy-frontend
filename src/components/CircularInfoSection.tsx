@@ -100,6 +100,8 @@ export default function CircularInfoSection({ className }: CircularInfoProps) {
           src="https://cdn-icons-png.flaticon.com/128/3937/3937245.png"
           alt="Economia Circular"
           className="w-40 h-40"
+          width={160}
+          height={160}
         />
       </section>
 
@@ -167,6 +169,8 @@ export default function CircularInfoSection({ className }: CircularInfoProps) {
                   src={item.image}
                   alt={item.title}
                   className="w-16 h-16 mx-auto"
+                  width={160}
+                  height={160}
                 />
               </div>
             ))}
