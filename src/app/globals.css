@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+.sidebar-expanded {
+  margin-left: 16rem; /* 64 x 4 = 256px */
+  transition: margin-left 0.3s ease;
+}
+
+.sidebar-collapsed {
+  margin-left: 4rem; /* 16 x 4 = 64px */
+  transition: margin-left 0.3s ease;
+}
