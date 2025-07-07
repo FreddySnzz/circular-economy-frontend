@@ -19,7 +19,7 @@ export default function MessagesPage() {
       { 
         isMobile ? (
           <>
-            <Navbar className="fixed top-0 left-0 w-full z-50"/>
+            <Navbar className="fixed top-0 left-0 w-full z-50" />
             <main className={`flex-1 w-full pt-14 px-4`}>
               <Dashboard />
             </main>
