@@ -50,7 +50,7 @@ export default function SimpleForm({ className }: FormProps) {
 
   return (
     <section id="contact" className={`flex bg-green-50 py-16 px-4 ${className}`}>
-      <div className="flex justify-center items-center mx-auto text-center gap-20">
+      <div className="flex flex-col md:flex-row justify-center items-center mx-auto text-center gap-20">
         <div>
           <h2 className="text-6xl font-bold text-green-800 mb-6">
             Fale Conosco

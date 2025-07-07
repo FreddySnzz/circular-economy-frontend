@@ -2,7 +2,6 @@
 
 import { useEffect } from "react";
 import AOS from "aos";
-import { GlobalLoadingProvider } from "@/components/context/GlobalLoadingContext";
 
 import "aos/dist/aos.css";
 import "./globals.css";
@@ -22,9 +21,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body>
-        <GlobalLoadingProvider>
-          {children}
-        </GlobalLoadingProvider>
+        {children}
       </body>
     </html>
   );

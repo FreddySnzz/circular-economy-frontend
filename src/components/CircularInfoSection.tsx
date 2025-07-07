@@ -87,7 +87,7 @@ const circularData = [
 export default function CircularInfoSection({ className }: CircularInfoProps) {
   return (
     <div className={className}>
-      <section className="flex-1 bg-green-50 flex flex-col justify-center items-center text-center pt-30 pb-15 px-4">
+      <section className="flex-1 bg-green-50 flex flex-col justify-center items-center text-center p-28  px-4">
         <h1 className="text-5xl font-extrabold text-green-800 mb-4">
           Economia Circular
         </h1>
@@ -151,7 +151,7 @@ export default function CircularInfoSection({ className }: CircularInfoProps) {
             Entenda como a Economia Circular transforma a maneira como produzimos e consumimos.
           </p>
 
-          <div className="grid sm:grid-2 lg:grid-4 gap-10">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
             {circularData.map((item, idx) => (
               <div
                 key={idx}

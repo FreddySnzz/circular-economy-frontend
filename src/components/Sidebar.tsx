@@ -54,7 +54,7 @@ export default function Sidebar({
           </Link>
           <Link
             href="/messages"
-            className="flex items-center gap-4 hover:text-green-200 transition font-semibold"
+            className="flex items-center gap-4 hover:text-green-200 transition font-bold"
           >
             <FaEnvelope className={expanded ? "text-2xl" : "text-2xl"} />
             {expanded && <span>Mensagens</span>}
