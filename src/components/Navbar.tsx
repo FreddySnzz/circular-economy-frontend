@@ -6,6 +6,7 @@ import {
   FaHome, 
   FaEnvelope 
 } from "react-icons/fa";
+import { useResponsive } from '@/hooks/useResponsive';
 
 interface NavbarProps extends React.HTMLAttributes<HTMLElement> {
   className?: string;
@@ -13,6 +14,7 @@ interface NavbarProps extends React.HTMLAttributes<HTMLElement> {
 
 export default function Navbar({ className }: NavbarProps) {
   const [isScrolled, setIsScrolled] = useState(false);
+  const isMobile = useResponsive('sm');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,18 +35,33 @@ export default function Navbar({ className }: NavbarProps) {
         <FaRecycle className="text-xl" />
         <span className="font-bold text-lg">Economia Circular</span>
       </div>
-      <div className="flex gap-6">
-        <Link href="/" className="flex items-center gap-1 hover:text-green-200">
-          <FaHome /> Página Inicial
-        </Link>
-        <Link href="/messages" className="flex items-center gap-1 hover:text-green-200">
-          <FaEnvelope /> Mensagens
-        </Link>
-        <Link href="#about" className="flex items-center gap-1 hover:text-green-200">
-          <FaLeaf /> Sobre
-        </Link>
-        
-      </div>
+      {
+        isMobile ? (
+          <div className="flex gap-6">
+            <Link href="/" className="flex items-center gap-1 hover:text-green-200">
+              <FaHome className="text-2xl" />
+            </Link>
+            <Link href="/messages" className="flex items-center gap-1 hover:text-green-200">
+              <FaEnvelope className="text-2xl" />
+            </Link>
+            <Link href="#about" className="flex items-center gap-1 hover:text-green-200">
+              <FaLeaf className="text-2xl" />
+            </Link>
+          </div>
+        ) : (
+          <div className="flex gap-6">
+            <Link href="/" className="flex items-center gap-1 hover:text-green-200">
+              <FaHome /> Página Inicial
+            </Link>
+            <Link href="/messages" className="flex items-center gap-1 hover:text-green-200">
+              <FaEnvelope /> Mensagens
+            </Link>
+            <Link href="#about" className="flex items-center gap-1 hover:text-green-200">
+              <FaLeaf /> Sobre
+            </Link>
+          </div>
+        )
+      }
     </nav>
   )
 }
