@@ -4,7 +4,7 @@ import { useState } from "react";
 import { 
   FaPaperPlane
 } from "react-icons/fa";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 
 import { enviarFormulario } from "@/services/api";
 
@@ -49,7 +49,7 @@ export default function SimpleForm({ className }: FormProps) {
 
   return (
     <section id="contact" className={`flex bg-green-50 py-16 px-4 ${className}`}>
-      <div className="flex flex-col md:flex-row justify-center items-center mx-auto text-center gap-20">
+      <div className="flex flex-col md:flex-row justify-center items-center mx-auto text-center md:gap-20 gap-10 w-full max-w-7xl px-4" data-aos="fade-left">
         <div>
           <h2 className="text-6xl font-bold text-green-800 mb-6">
             Fale Conosco
@@ -100,7 +100,6 @@ export default function SimpleForm({ className }: FormProps) {
               <div className="flex justify-center items-center gap-2">Enviar <FaPaperPlane /></div>
             )}
           </button>
-          <ToastContainer position="top-right" autoClose={3000}/>
         </form>
       </div>
     </section>

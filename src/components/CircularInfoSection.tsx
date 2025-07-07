@@ -88,7 +88,7 @@ const circularData = [
 export default function CircularInfoSection({ className }: CircularInfoProps) {
   return (
     <div className={className}>
-      <section className="flex-1 bg-green-50 flex flex-col justify-center items-center text-center p-28  px-4">
+      <section className="flex-1 bg-green-50 flex flex-col justify-center items-center text-center pt-32 pb-16 px-4">
         <h1 className="text-5xl font-extrabold text-green-800 mb-4">
           Economia Circular
         </h1>
@@ -99,14 +99,14 @@ export default function CircularInfoSection({ className }: CircularInfoProps) {
         <Image
           src="https://cdn-icons-png.flaticon.com/128/3937/3937245.png"
           alt="Economia Circular"
-          className="w-40 h-40"
+          className="w-40 h-40 mx-auto object-contain"
           width={160}
           height={160}
         />
       </section>
 
       <section id="about" className="bg-white py-16 px-4">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-7xl mx-auto text-center px-4">
           <h2 className="text-3xl font-bold text-green-800 mb-6">
             O que é Economia Circular?
           </h2>
@@ -118,7 +118,7 @@ export default function CircularInfoSection({ className }: CircularInfoProps) {
             uso pelo maior tempo possível.
           </p>
 
-          <div className="grid md:grid-cols-3 gap-8 mt-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10">
             <div className="p-6 border rounded-lg shadow hover:shadow-lg transition">
               <FaRecycle className="text-green-700 text-4xl mb-4 mx-auto" />
               <h3 className="text-xl font-semibold mb-2">Redução de Resíduos</h3>
@@ -168,7 +168,7 @@ export default function CircularInfoSection({ className }: CircularInfoProps) {
                 <Image
                   src={item.image}
                   alt={item.title}
-                  className="w-16 h-16 mx-auto"
+                  className="w-16 h-16 mx-auto object-contain"
                   width={160}
                   height={160}
                 />

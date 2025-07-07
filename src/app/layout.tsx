@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect } from "react";
+import { ToastContainer } from "react-toastify";
 import AOS from "aos";
 
 import "aos/dist/aos.css";
@@ -13,14 +14,23 @@ export default function RootLayout({
 }) {
   useEffect(() => {
     AOS.init({
-      duration: 800,
+      duration: 400,
       once: false,
     });
   }, []);
 
   return (
     <html lang="pt-br">
-      <body>
+      <body className="overflow-x-hidden w-full">
+        <ToastContainer 
+        position="top-right" 
+        style={{
+          position: 'fixed',
+          top: '1rem',
+          right: '1rem',
+          zIndex: 9999
+        }} 
+        autoClose={4000} />
         {children}
       </body>
     </html>
