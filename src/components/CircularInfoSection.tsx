@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import {
   FaRecycle,
   FaLeaf,
@@ -95,7 +96,7 @@ export default function CircularInfoSection({ className }: CircularInfoProps) {
           Uma abordagem sustentável para reduzir desperdícios, prolongar ciclos
           de vida dos produtos e construir um planeta mais equilibrado.
         </p>
-        <img
+        <Image
           src="https://cdn-icons-png.flaticon.com/128/3937/3937245.png"
           alt="Economia Circular"
           className="w-40 h-40"
@@ -162,7 +163,7 @@ export default function CircularInfoSection({ className }: CircularInfoProps) {
                   {item.title}
                 </h3>
                 <p className="text-gray-600 text-sm mb-4">{item.description}</p>
-                <img
+                <Image
                   src={item.image}
                   alt={item.title}
                   className="w-16 h-16 mx-auto"
