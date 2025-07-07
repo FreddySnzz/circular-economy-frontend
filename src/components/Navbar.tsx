@@ -52,7 +52,7 @@ export default function Navbar({ className }: NavbarProps) {
             <FaHome className="text-2xl" />
           </Link>
           <Link
-            href="/messages"
+            href="/mensagens"
             className="flex items-center gap-1 hover:text-green-200"
           >
             <FaEnvelope className="text-2xl" />
