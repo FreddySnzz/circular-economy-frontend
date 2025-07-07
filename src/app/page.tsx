@@ -1,6 +1,5 @@
 "use client";
 
-import { FaLeaf, FaRecycle } from "react-icons/fa";
 import SimpleForm from "@/components/Form";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
@@ -12,11 +11,9 @@ export default function Home() {
       <div className="flex flex-col min-h-screen">
         <Navbar className="fixed top-0 left-0 w-full z-50"/>
         <CircularInfoSection />
-
         <div data-aos="fade-left">
           <SimpleForm />
         </div>
-
         <Footer />
       </div>
     </div>
