@@ -1,11 +1,11 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:8080/messages";
+const API_URL = process.env.BACKEND_URL || "http://localhost:8080/messages";
 
 export async function enviarFormulario(
   data: any
 ): Promise<any> {
-  return axios.post(`${API_URL}`, data);
+  return axios.post(`${process.env. API_URL}`, data);
 };
 
 export async function buscarMensagens(): Promise<any> {
