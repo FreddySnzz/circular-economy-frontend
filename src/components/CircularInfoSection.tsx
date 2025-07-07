@@ -154,7 +154,7 @@ export default function CircularInfoSection({ className }: CircularInfoProps) {
             Entenda como a Economia Circular transforma a maneira como produzimos e consumimos.
           </p>
 
-          <div className="grid grid-cols-2 gap-10">
+          <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-10">
             {circularData.map((item, idx) => (
               <div
                 key={idx}
