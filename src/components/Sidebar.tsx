@@ -53,7 +53,7 @@ export default function Sidebar({
             {expanded && <span>Página Inicial</span>}
           </Link>
           <Link
-            href="/messages"
+            href="/mensagens"
             className="flex items-center gap-4 hover:text-green-200 transition font-bold"
           >
             <FaEnvelope className={expanded ? "text-2xl" : "text-2xl"} />
